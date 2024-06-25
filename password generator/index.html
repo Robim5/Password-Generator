@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h2 class="heading">- Password Generator -</h2>
+
+        <input type="text" class="password" readonly id="PasswordResult">
+
+        <div class="detail">
+            <p>Password Length</p>
+            <input type="number" id="length" name="length" min="8" max="20">
+            <p>Include Uppercase Letters</p>
+            <input type="checkbox" name="upper" id="upper">
+            <p>Include Lowercase Letters</p>
+            <input type="checkbox" name="lower" id="lower">
+            <p>Include Numbers</p>
+            <input type="checkbox" name="number" id="number">
+            <p>Include Special Characters</p>
+            <input type="checkbox" name="special" id="special">
+        </div>
+
+        <div class="buttons">
+            <button class="generate">Generate</button>
+            <button class="copy"><i class='bx bxs-copy'></i></button>
+            <button class="clear"><i class='bx bx-eraser'></i></button>
+        </div>
+
+    </div>
+
+    <div class="behindcontainer"></div>
+
+    <div class="ballforpritti">
+        <div class="changetheme">
+            <img src="nature.png" id="imgtheme">
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
